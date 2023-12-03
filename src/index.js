@@ -57,7 +57,7 @@ function onFetchError(error) {
     'Oops! Something went wrong! Try reloading the page or select another cat breed!',
     {
       position: 'center-center',
-      timeout: 5000,
+      timeout: 10000,
       width: '400px',
       fontSize: '24px',
     }
