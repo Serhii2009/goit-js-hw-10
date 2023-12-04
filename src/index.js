@@ -18,6 +18,9 @@ divCatInfo.classList.add('is-hidden');
 
 let arrBreedsId = [];
 fetchBreeds()
+  .then(() => {
+    loader.classList.replace('is-hidden', 'loader');
+  })
   .then(data => {
     data.forEach(element => {
       arrBreedsId.push({ text: element.name, value: element.id });
